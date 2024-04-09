@@ -1,0 +1,296 @@
+
+*** Running vivado
+    with args -log stage_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source stage_1.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source stage_1.tcl -notrace
+Command: synth_design -top stage_1 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15700
+INFO: [Synth 8-11241] undeclared symbol 'btnc', assumed default net type 'wire' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/stage_1.sv:46]
+INFO: [Synth 8-11241] undeclared symbol 'btnd', assumed default net type 'wire' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/stage_1.sv:47]
+INFO: [Synth 8-11241] undeclared symbol 'clk', assumed default net type 'wire' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/stage_1.sv:49]
+INFO: [Synth 8-11241] undeclared symbol 'q', assumed default net type 'wire' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/stage_1.sv:51]
+INFO: [Synth 8-11241] undeclared symbol 'clkO', assumed default net type 'wire' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/stage_1.sv:53]
+INFO: [Synth 8-11241] undeclared symbol 'btnu', assumed default net type 'wire' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/stage_1.sv:54]
+INFO: [Synth 8-11241] undeclared symbol 'btnl', assumed default net type 'wire' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/stage_1.sv:55]
+INFO: [Synth 8-11241] undeclared symbol 'btnr', assumed default net type 'wire' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/stage_1.sv:56]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1279.410 ; gain = 408.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'stage_1' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/stage_1.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/debouncer.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/debouncer.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'clock_generator' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/clock_generator.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_generator' (0#1) [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/clock_generator.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'uartTX' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/uartTX.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (0#1) [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'shr' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/shr.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'shr' (0#1) [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/shr.sv:23]
+WARNING: [Synth 8-7071] port 'q' of module 'shr' is unconnected for instance 'shiftReg' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/uartTX.sv:50]
+WARNING: [Synth 8-7023] instance 'shiftReg' of module 'shr' has 8 connections declared, but only 7 given [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/uartTX.sv:50]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/mux4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (0#1) [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/mux4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'upCounter' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/upCounter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'upCounter' (0#1) [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/upCounter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'uartTX' (0#1) [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/uartTX.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'uartRX' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/uartRX.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'uartRX' (0#1) [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/uartRX.sv:23]
+WARNING: [Synth 8-689] width (1) of port connection 'q' does not match port width (8) of module 'uartRX' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/stage_1.sv:51]
+INFO: [Synth 8-6157] synthesizing module 'clock_generator__parameterized0' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/clock_generator.sv:23]
+	Parameter N bound to: 10000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_generator__parameterized0' (0#1) [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/clock_generator.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/display.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/display.sv:82]
+INFO: [Synth 8-6157] synthesizing module 'sSegHex' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/sSegHex.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'sSegHex' (0#1) [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/sSegHex.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'display' (0#1) [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/display.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'stage_1' (0#1) [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/stage_1.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1374.461 ; gain = 504.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1374.461 ; gain = 504.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1374.461 ; gain = 504.020
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1374.461 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/Basys3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/Basys3.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/Basys3.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/Basys3.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/Basys3.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/stage_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/stage_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1485.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1485.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'ld_reg' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/display.sv:89]
+WARNING: [Synth 8-327] inferring latch for variable 'ld15_reg' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/display.sv:88]
+WARNING: [Synth 8-327] inferring latch for variable 'first_reg' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/display.sv:84]
+WARNING: [Synth 8-327] inferring latch for variable 'second_reg' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/display.sv:85]
+WARNING: [Synth 8-327] inferring latch for variable 'third_reg' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/display.sv:86]
+WARNING: [Synth 8-327] inferring latch for variable 'fourth_reg' [C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.srcs/sources_1/new/display.sv:87]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 2     
+	   2 Input   20 Bit       Adders := 5     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               31 Bit    Registers := 2     
+	               20 Bit    Registers := 5     
+	                8 Bit    Registers := 14    
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   20 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 14    
+	   3 Input    8 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 5     
+	   3 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 2     
+	  13 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 5     
+	  13 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 13    
+	   3 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 1     
+	  13 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    41|
+|3     |LUT1   |    10|
+|4     |LUT2   |   114|
+|5     |LUT3   |    16|
+|6     |LUT4   |    74|
+|7     |LUT5   |     8|
+|8     |LUT6   |    69|
+|9     |MUXF7  |     3|
+|10    |FDRE   |   293|
+|11    |LD     |    19|
+|12    |IBUF   |    17|
+|13    |OBUF   |    23|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1485.059 ; gain = 614.617
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1485.059 ; gain = 504.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1485.059 ; gain = 614.617
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1485.059 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1485.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  LD => LDCE: 19 instances
+
+Synth Design complete | Checksum: 1a20d7f9
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 12 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:41 . Memory (MB): peak = 1485.059 ; gain = 1018.766
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.runs/synth_1/stage_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file stage_1_utilization_synth.rpt -pb stage_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 12:01:44 2024...

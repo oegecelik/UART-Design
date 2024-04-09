@@ -1,0 +1,97 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Apr  9 12:02:11 2024
+| Host         : DESKTOP-HHFOAS1 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file stage_1_control_sets_placed.rpt
+| Design       : stage_1
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    40 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              33 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             175 |           52 |
+| Yes          | No                    | No                     |              16 |            3 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              88 |           20 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+-----------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|            Clock Signal           |              Enable Signal              |           Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------+-----------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|  clk_BUFG                         |                                         |                                     |                1 |              2 |         2.00 |
+|  newClock2/CLK                    |                                         | reset_IBUF                          |                2 |              6 |         3.00 |
+|  clk_BUFG                         |                                         | reset_IBUF                          |                3 |              7 |         2.33 |
+|  clk_BUFG                         | nolabel_line50/counter1/cnt             | nolabel_line50/counter1/counter_clr |                3 |              8 |         2.67 |
+|  clk_BUFG                         | nolabel_line50/transmitReg/treg_ld      | nolabel_line50/transmitReg/SR[0]    |                2 |              8 |         4.00 |
+|  clk_BUFG                         | nolabel_line50/shiftReg/q[7]_i_1__2_n_0 | nolabel_line50/transmitReg/SR[0]    |                2 |              8 |         4.00 |
+|  clk_in_IBUF_BUFG                 |                                         |                                     |                6 |             12 |         2.00 |
+|  clk_BUFG                         | nolabel_line50/TXBUF[0][3]_i_1_n_0      |                                     |                3 |             16 |         5.33 |
+|  clk_BUFG                         | nolabel_line50/TXBUF[0][3]_i_1_n_0      | nolabel_line50/TXBUF[0][7]_i_1_n_0  |                3 |             16 |         5.33 |
+|  clk_BUFG                         | nolabel_line51/counter2/E[0]            | nolabel_line51/counter2/SR[0]       |                4 |             16 |         4.00 |
+|  nolabel_line57/ld_reg[1]_i_2_n_0 |                                         |                                     |                5 |             19 |         3.80 |
+|  clk_in_IBUF_BUFG                 |                                         | deb1/ctr_q[19]_i_1__1_n_0           |                6 |             20 |         3.33 |
+|  clk_in_IBUF_BUFG                 |                                         | deb2/ctr_q[19]_i_1__2_n_0           |                5 |             20 |         4.00 |
+|  clk_in_IBUF_BUFG                 |                                         | deb3/ctr_q[19]_i_1__3_n_0           |                6 |             20 |         3.33 |
+|  clk_in_IBUF_BUFG                 |                                         | deb4/p_0_in                         |                6 |             20 |         3.33 |
+|  clk_in_IBUF_BUFG                 |                                         | deb5/ctr_q[19]_i_1__0_n_0           |                6 |             20 |         3.33 |
+|  clk_in_IBUF_BUFG                 |                                         | newClock2/clk_out                   |                9 |             31 |         3.44 |
+|  clk_in_IBUF_BUFG                 |                                         | newClock/clk_out                    |                9 |             31 |         3.44 |
+|  clk_BUFG                         | nolabel_line51/RXBUF                    | nolabel_line51/RXBUF[0][7]_i_1_n_0  |                6 |             32 |         5.33 |
++-----------------------------------+-----------------------------------------+-------------------------------------+------------------+----------------+--------------+
+
+

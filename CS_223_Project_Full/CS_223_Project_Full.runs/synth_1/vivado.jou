@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Apr  9 12:00:57 2024
+# Process ID: 20184
+# Current directory: C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.runs/synth_1
+# Command line: vivado.exe -log stage_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source stage_1.tcl
+# Log file: C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.runs/synth_1/stage_1.vds
+# Journal file: C:/Users/oegec/OneDrive/Documents/Ege/Vivado/CS_223_Project_Full/CS_223_Project_Full.runs/synth_1\vivado.jou
+# Running On: DESKTOP-HHFOAS1, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 34045 MB
+#-----------------------------------------------------------
+source stage_1.tcl -notrace
